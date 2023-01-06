@@ -5,8 +5,8 @@ const Nav = () => {
   return (
     <section className="Nav">
       <Link to="/"><p>List</p></Link>
-      <Link to="/about">About</Link>
-      <Link to="/Lyrics">Lyrics</Link>
+      <Link to="/about"><p>About</p></Link>
+      <Link to="/Lyrics"><p>Lyrics</p></Link>
     </section>
   );
 };
