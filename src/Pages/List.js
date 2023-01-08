@@ -23,11 +23,20 @@ const List = () => {
       }
   ]);
   
+  // list 추가하기
   const addNewList = (newList) => {
     setLists([...lists, newList]);
   }
   
-  
+  // list 삭제하기
+  const deleteList = (id) => {
+    const filteredList = lists.filter((el) => el.uuid !== Number(id));
+    setLists(filteredList);
+    console.log(id)
+    console.log(filteredList)
+  }
+
+
   return (
     <section>
       <div>{currentUser}</div>
@@ -35,7 +44,7 @@ const List = () => {
       <NewListForm onButtonClick={addNewList} />
       <ul id="lists">
         {lists.map((el) => (
-          <SingleList key={el.uuid} writer={el.writer} date={el.date}>
+          <SingleList key={el.uuid} id={el.uuid} writer={el.writer} date={el.date} deleteList={deleteList}>
             {el.content}
           </SingleList>
         ))}
