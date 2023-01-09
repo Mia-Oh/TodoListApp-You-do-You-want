@@ -8,6 +8,24 @@
   font-family: 'Gaegu', -apple-system, BlinkMacSystemFont, Segoe UI,
     Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
     sans-serif;
+  list-style-type: none;
+}
+#App {
+  height: 100vh;
+  width: 100vw;
+  /*background-color: #FFFCF4;*/
+  background-color: cadetblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main {
+  border: 1px solid black;
+  height: 100vh;
+}
+.Nav {
+  height: 100vh;
+  width: 100vw;
 }
 .toggle-container{
   background-image: url(/public/unchecked.png);

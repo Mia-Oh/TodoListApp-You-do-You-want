@@ -1,12 +1,15 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const Nav = () => {
+const Nav = ({setShowNav}) => {
+
+
   return (
     <section className="Nav">
-      <Link to="/"><p>List</p></Link>
-      <Link to="/about"><p>About</p></Link>
-      <Link to="/Lyrics"><p>Lyrics</p></Link>
+      <div onClick={() => setShowNav(false)}>Home</div>
+      <Link to="/" onClick={() => setShowNav(false)}>List</Link>
+      <Link to="/about" onClick={() => setShowNav(false)}><p>About</p></Link>
+      <Link to="/Lyrics" onClick={() => setShowNav(false)}><p>Lyrics</p></Link>
     </section>
   );
 };

@@ -9,7 +9,7 @@ const SingleList = ( { id, date, children, deleteList } ) => {
 
   const toggleHandler = () => {
     setIsCheck(!isCheck)
-    console.log(isCheck)
+    //console.log(isCheck)
   }
 
   return (
