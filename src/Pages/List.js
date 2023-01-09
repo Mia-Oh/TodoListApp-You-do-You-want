@@ -11,15 +11,22 @@ const List = () => {
   const [lists, setLists] = useState([
       {
         uuid: 1,
-        writer: "김원필",
         date: "2020-10-10",
-        content: "안녕!"
+        content: "취침 준비하기"
       },
       {
         uuid: 2,
-        writer: "강영현",
         date: "2020-10-12",
-        content: "오히려 좋아!"
+        content: "기상하기"
+      },
+      {
+        uuid: 3,
+        date: "2020-10-12",
+        content: "지하철 타러 가기"
+      },      {
+        uuid: 4,
+        date: "2020-10-12",
+        content: "나가서 버스타기"
       }
   ]);
   
@@ -36,6 +43,11 @@ const List = () => {
     console.log(filteredList)
   }
 
+  // 체크된 리스트 
+  const listChecked = (id) => {
+    console.log(id)
+  }
+
 
   return (
     <section>
@@ -44,7 +56,12 @@ const List = () => {
       <NewListForm onButtonClick={addNewList} />
       <ul id="lists">
         {lists.map((el) => (
-          <SingleList key={el.uuid} id={el.uuid} writer={el.writer} date={el.date} deleteList={deleteList}>
+          <SingleList 
+          key={el.uuid} 
+          id={el.uuid} 
+          date={el.date}
+          deleteList={deleteList}
+          >
             {el.content}
           </SingleList>
         ))}
