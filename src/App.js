@@ -24,7 +24,7 @@ const App = (props) => {
           <Nav setShowNav={setShowNav} /> :
           <div        
             onClick={navHandler}
-          >Home</div> 
+          >Nav Bar</div> 
           }
           {showNav ? null :
             <section className="features">
