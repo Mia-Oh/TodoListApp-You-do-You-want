@@ -1,5 +1,4 @@
 import React from "react";
-import Footer from "../Components/Footer";
 
 const Feedback = () => {
   return (
@@ -23,7 +22,6 @@ const Feedback = () => {
         <p>logo 출처: www.flaticon.com/authors/freepik</p>
         <p>그외 출처: www.flaticon.com</p>
       </div>
-      <Footer />
     </section>
   );
 };
