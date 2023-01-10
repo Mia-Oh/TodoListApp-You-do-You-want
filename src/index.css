@@ -79,14 +79,14 @@ main {
   display: inline-block;
   background-image: url(/public/unchecked.png);
   background-repeat: no-repeat;
-  background-size: 1.2rem;
-  width: 1.2rem;
-  height: 1.2rem;
+  background-size: 1.5rem;
+  width: 1.5rem;
+  height: 1.5rem;
   margin: 0 10px 0 0;
 }
 .toggle-checked{
   background-image: url(/public/checked.png);
-  background-size: 1.2rem;
+  background-size: 1.5rem;
 }
 .date {
   display: inline-block;
@@ -191,33 +191,4 @@ main {
   font-size: 1px;
   text-align: center;
   font-weight: 600;
-}
-/* Feedback */
-#feedback {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
-#author {
-  margin-left: 2.5rem;
-}
-#author > img {
-  width: 5.5rem;
-  border-radius: 50%;
-  margin-bottom: 0.4em;
-}
-.cate {
- display: flex;
- align-items: center; 
-}
-.cate > img {
-  width: 1rem;
-  margin-right: 10px;
-}
-#copyright {
-  margin-top: 0.5rem;
-  margin-left: 2.5rem;
-}
-#copyright > p {
-  font-size: 12px;
 }

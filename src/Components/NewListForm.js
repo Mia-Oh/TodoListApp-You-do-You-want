@@ -16,7 +16,6 @@ const NewListForm = ({ onButtonClick }) => {
     onButtonClick(newList);
   }
 
-
   return (
       <div id="writing-area">
         <input id="new-list-content" onChange={onTextChange} placeholder=" Type Here...!"></input>
