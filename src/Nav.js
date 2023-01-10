@@ -14,7 +14,7 @@ const Nav = ({setShowNav}) => {
         <Link to="/about" onClick={() => setShowNav(false)}><p className="nav-link">About</p></Link>
         <Link to="/setting" onClick={() => setShowNav(false)}><p className="nav-link">Setting</p></Link>
         <Link to="/Lyrics" onClick={() => setShowNav(false)}><p className="nav-link">Lyrics</p></Link>
-        <Link to="/Feedback" onClick={() => setShowNav(false)}><p className="nav-link">Feedback</p></Link>
+        
         <Footer />       
       </div>
     </section>
