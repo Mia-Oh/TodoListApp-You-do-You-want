@@ -9,6 +9,10 @@ import Setting from "./Pages/Setting";
 
 const App = (props) => {
   
+  // 유저 닉네임 상태
+  const [currentUser, setCurrentUser] = useState('원필이');
+
+
   // 슬라이드 메뉴를 위한 상태 만들기
   const [showNav, setShowNav] = useState(false);
 
@@ -26,14 +30,16 @@ const App = (props) => {
           <div
             className="home"        
             onClick={navHandler}
-          >Nav Bar</div> 
+          ></div> 
           }
           {showNav ? null :
-            <section className="features">
+            <section id="features">
             <Routes>
-              <Route path="/" element={<List />}/>
+              <Route path="/" element={<List currentUser={currentUser}/>}/>
               <Route path="/about" element={<About />} />
-              <Route path="/setting" element={<Setting />} />
+              <Route path="/setting" element={<Setting 
+                currentUser={currentUser} 
+                setCurrentUser={setCurrentUser}/>} />
               <Route path="/Lyrics" element={<Lyrics />} />
             </Routes>
           </section>}

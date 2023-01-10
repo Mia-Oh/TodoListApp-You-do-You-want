@@ -19,8 +19,9 @@ const NewListForm = ({ onButtonClick }) => {
 
   return (
       <div id="writing-area">
-        <input id="new-list-content" onChange={onTextChange}></input>
-        <button id="submit-new-list" onClick={onClickSubmit}>Button</button>
+        <input id="new-list-content" onChange={onTextChange} placeholder=" Type Here...!"></input>
+        <button id="submit-new-list" 
+        onClick={onClickSubmit}>입력</button>
       </div>
     );
 }

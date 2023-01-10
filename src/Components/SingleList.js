@@ -1,7 +1,5 @@
 import React,{ useState } from "react";
 
-
-
 const SingleList = ( { id, date, children, deleteList } ) => {
 
 
@@ -20,8 +18,9 @@ const SingleList = ( { id, date, children, deleteList } ) => {
         onClick={toggleHandler} 
        ></div>
       <div className="date">{date}</div>
-      <div>{children}</div>
-      <button className="delete" value={id} onClick={(e) => deleteList(e.target.value)}>X</button>
+      <div className="list-contents">{children}</div>
+      <button className="delete" value={id} onClick={(e) => deleteList(e.target.value)}>
+      XXX</button>
     </li>
     );
 }

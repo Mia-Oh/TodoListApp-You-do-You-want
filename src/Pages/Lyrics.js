@@ -6,11 +6,11 @@ import { lyricsData } from "../data/lyricsData";
 
 const Lyrics = () => {
   return (
-    <section>
+    <section id="todayLyrics">
       <h4>오늘의 가사</h4>
       <div>
         {/* {lyricsData[2]}<br/>{lyricsData[1]} */}
-        {lyricsData.map((el) => el+`\n`)}
+        {lyricsData.map((el) => el+`\n\n`)}
       </div>
     </section>
   );

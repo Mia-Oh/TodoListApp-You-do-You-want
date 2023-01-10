@@ -8,7 +8,7 @@ function RandomLyrics(){
   }
 
   return (
-    <div>
+    <div id="list-lyrics">
       <p>{lyricsData[getRandomIndex(lyricsData.length)]}</p>
     </div>
   );
