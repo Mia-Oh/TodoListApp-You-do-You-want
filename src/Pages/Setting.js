@@ -1,4 +1,5 @@
 import React from "react";
+import Footer from "../Components/Footer";
 
 const Setting = ({currentUser,setCurrentUser}) => {
 
@@ -15,6 +16,7 @@ const Setting = ({currentUser,setCurrentUser}) => {
         placeholder=" 귀엽네요!" 
         onChange={onTextSetting}
         ></input>
+      <Footer />
     </section>
   );
 };

@@ -174,3 +174,21 @@ main {
 #todayLyrics > div {
   text-align: right;
 }
+/* Footer */
+#footer {
+  width: 10rem;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 78%;
+}
+#footer > img {
+  width: 1.5rem;
+  margin-bottom: 5px;
+}
+#footer > p {
+  font-size: 1px;
+  text-align: center;
+  font-weight: 600;
+}

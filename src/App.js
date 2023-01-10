@@ -6,6 +6,7 @@ import List from './Pages/List'
 import About from './Pages/About'
 import Lyrics from './Pages/Lyrics'
 import Setting from "./Pages/Setting";
+import Feedback from "./Pages/Feedback";
 
 const App = (props) => {
   
@@ -41,6 +42,7 @@ const App = (props) => {
                 currentUser={currentUser} 
                 setCurrentUser={setCurrentUser}/>} />
               <Route path="/Lyrics" element={<Lyrics />} />
+              <Route path="/Feedback" element={<Feedback />} />
             </Routes>
           </section>}
         </main>
