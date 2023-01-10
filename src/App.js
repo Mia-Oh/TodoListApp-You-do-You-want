@@ -5,6 +5,7 @@ import Nav from './Nav';
 import List from './Pages/List'
 import About from './Pages/About'
 import Lyrics from './Pages/Lyrics'
+import Setting from "./Pages/Setting";
 
 const App = (props) => {
   
@@ -16,13 +17,14 @@ const App = (props) => {
     //console.log(showNav)
   }
 
-
   return (
     <BrowserRouter>
       <div id="App">
-        <main>{showNav ?
+        <main>
+          {showNav ?
           <Nav setShowNav={setShowNav} /> :
-          <div        
+          <div
+            className="home"        
             onClick={navHandler}
           >Nav Bar</div> 
           }
@@ -31,6 +33,7 @@ const App = (props) => {
             <Routes>
               <Route path="/" element={<List />}/>
               <Route path="/about" element={<About />} />
+              <Route path="/setting" element={<Setting />} />
               <Route path="/Lyrics" element={<Lyrics />} />
             </Routes>
           </section>}

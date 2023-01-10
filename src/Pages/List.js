@@ -43,15 +43,15 @@ const List = () => {
     console.log(filteredList)
   }
 
-  // 체크된 리스트 
-  const listChecked = (id) => {
-    console.log(id)
-  }
+  // // 체크된 리스트 
+  // const listChecked = (id) => {
+  //   console.log(id)
+  // }
 
 
   return (
     <section>
-      <div>{currentUser}</div>
+      <h4>{currentUser}의 행운을 빌어줘</h4>
       <RandomLyrics />
       <NewListForm onButtonClick={addNewList} />
       <ul id="lists">
