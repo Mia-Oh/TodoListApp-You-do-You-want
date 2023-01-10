@@ -79,14 +79,14 @@ main {
   display: inline-block;
   background-image: url(/public/unchecked.png);
   background-repeat: no-repeat;
-  background-size: 1.5rem;
-  width: 1.5rem;
-  height: 1.5rem;
+  background-size: 1.2rem;
+  width: 1.2rem;
+  height: 1.2rem;
   margin: 0 10px 0 0;
 }
 .toggle-checked{
   background-image: url(/public/checked.png);
-  background-size: 1.5rem;
+  background-size: 1.2rem;
 }
 .date {
   display: inline-block;
@@ -124,7 +124,6 @@ main {
   color: #fffcf400;
   background-color: #fffcf400;
 }
-/* About  */
 #about {
   display: flex;
   flex-direction: column;
@@ -141,7 +140,6 @@ main {
   text-align: center;
   margin-bottom: 0.5rem;
 }
-/* Setting */
 #setting {
   display: flex;
   flex-direction: column;
@@ -161,7 +159,6 @@ main {
   border-radius: 5px;
   box-shadow: 1px 1px 2px 0;
 }
-/* Lyrics */
 #todayLyrics {
   display: flex;
   flex-direction: column;
@@ -174,14 +171,13 @@ main {
 #todayLyrics > div {
   text-align: right;
 }
-/* Footer */
 #footer {
   width: 10rem;
   align-self: center;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 78%;
+  margin-top: 75%;
 }
 #footer > img {
   width: 1.5rem;
@@ -191,4 +187,32 @@ main {
   font-size: 1px;
   text-align: center;
   font-weight: 600;
+}
+#feedback {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+#author {
+  margin-left: 2.5rem;
+}
+#author > img {
+  width: 5.5rem;
+  border-radius: 50%;
+  margin-bottom: 0.4em;
+}
+.cate {
+ display: flex;
+ align-items: center; 
+}
+.cate > img {
+  width: 1rem;
+  margin-right: 10px;
+}
+#copyright {
+  margin-top: 0.5rem;
+  margin-left: 2.5rem;
+}
+#copyright > p {
+  font-size: 12px;
 }

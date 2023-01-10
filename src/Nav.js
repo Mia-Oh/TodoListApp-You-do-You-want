@@ -1,5 +1,5 @@
 import React from "react";
-import Footer from "./Components/Footer";
+import Footer from "./Components/Footer.js"
 import { Link } from "react-router-dom";
 
 const Nav = ({setShowNav}) => {
@@ -15,7 +15,7 @@ const Nav = ({setShowNav}) => {
         <Link to="/setting" onClick={() => setShowNav(false)}><p className="nav-link">Setting</p></Link>
         <Link to="/Lyrics" onClick={() => setShowNav(false)}><p className="nav-link">Lyrics</p></Link>
         <Link to="/Feedback" onClick={() => setShowNav(false)}><p className="nav-link">Feedback</p></Link>
-        <Footer />
+        <Footer />       
       </div>
     </section>
   );
