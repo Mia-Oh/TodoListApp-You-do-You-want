@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/TodoListApp-You-do-Yo-want/static/css/main.b9a8b219.css",
+    "main.js": "/TodoListApp-You-do-Yo-want/static/js/main.87b3ae8b.js",
+    "static/media/green-love.png": "/TodoListApp-You-do-Yo-want/static/media/green-love.f56730c8196a9e7a8c3b.png",
+    "static/media/checked.png": "/TodoListApp-You-do-Yo-want/static/media/checked.af2a744f043c0183e3bc.png",
+    "static/media/home.png": "/TodoListApp-You-do-Yo-want/static/media/home.fd4beaaf254fea154d91.png",
+    "index.html": "/TodoListApp-You-do-Yo-want/index.html",
+    "main.b9a8b219.css.map": "/TodoListApp-You-do-Yo-want/static/css/main.b9a8b219.css.map",
+    "main.87b3ae8b.js.map": "/TodoListApp-You-do-Yo-want/static/js/main.87b3ae8b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b9a8b219.css",
+    "static/js/main.87b3ae8b.js"
+  ]
+}
