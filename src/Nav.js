@@ -9,11 +9,11 @@ const Nav = ({setShowNav}) => {
           className="home"
           onClick={() => setShowNav(false)}>
         </div>
-        <Link to="/" onClick={() => setShowNav(false)}><p className="nav-link">Home</p></Link>
-        <Link to="/about" onClick={() => setShowNav(false)}><p className="nav-link">About</p></Link>
-        <Link to="/setting" onClick={() => setShowNav(false)}><p className="nav-link">Setting</p></Link>
-        <Link to="/Lyrics" onClick={() => setShowNav(false)}><p className="nav-link">Lyrics</p></Link>
-        <Link to="/Feedback" onClick={() => setShowNav(false)}><p className="nav-link">Feedback</p></Link>
+        <Link to="/TodoListApp-You-do-You-want/index.html" onClick={() => setShowNav(false)}><p className="nav-link">Home</p></Link>
+        <Link to="/TodoListApp-You-do-You-want/about" onClick={() => setShowNav(false)}><p className="nav-link">About</p></Link>
+        <Link to="/TodoListApp-You-do-You-want/setting" onClick={() => setShowNav(false)}><p className="nav-link">Setting</p></Link>
+        <Link to="/TodoListApp-You-do-You-want/Lyrics" onClick={() => setShowNav(false)}><p className="nav-link">Lyrics</p></Link>
+        <Link to="/TodoListApp-You-do-You-want/Feedback" onClick={() => setShowNav(false)}><p className="nav-link">Feedback</p></Link>
       </div>
     </section>
   );
