@@ -14,8 +14,15 @@ const NewListForm = ({ onButtonClick }) => {
       content: NewListContent
     };
     onButtonClick(newList);
+    formReset();
   }
 
+  // 입력창 비우기
+  const formReset = () => {
+    const inputValue = document.querySelector('#new-list-content');
+    //console.log(inputValue.value);
+    inputValue.value = '';
+  }
 
   return (
       <div id="writing-area">
