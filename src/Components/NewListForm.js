@@ -4,10 +4,11 @@ const NewListForm = ({ onButtonClick }) => {
   const [NewListContent, setNewListContent] = useState("");
 
   const onTextChange = (e) => {
+    
     setNewListContent(e.target.value);
   }
 
-  const onClickSubmit = () => {
+  const onClickSubmit = (e) => {
     let newList = {
       uuid: Math.floor(Math.random() * 10000),
       date: new Date().toISOString().substring(0, 10),

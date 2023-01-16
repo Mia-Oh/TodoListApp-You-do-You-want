@@ -1,37 +1,27 @@
-import React,{ useState } from "react";
+import React,{ useEffect, useState } from "react";
 import RandomLyrics from "../Components/RandomLyrics";
 import SingleList from "../Components/SingleList";
 import NewListForm from "../Components/NewListForm";
 
 
 const List = ({currentUser}) => {
-  
-  const [lists, setLists] = useState([
-      {
-        uuid: 1,
-        date: "2022-10-10",
-        content: "취침 준비하기"
-      },
-      {
-        uuid: 2,
-        date: "2022-10-12",
-        content: "기상하기"
-      },
-      {
-        uuid: 3,
-        date: "2022-10-12",
-        content: "지하철 타러 가기"
-      },      {
-        uuid: 4,
-        date: "2022-10-12",
-        content: "나가서 버스타기"
-      }
-  ]);
+
+
+  const [lists, setLists] = useState(
+    JSON.parse(window.localStorage.getItem("fromLocalStorage"))
+  );
+
   
   // list 추가하기
   const addNewList = (newList) => {
-    setLists([...lists, newList]);
+    setLists([...lists, newList]);    
   }
+
+  useEffect(() => {
+    //console.log(lists)
+    window.localStorage.setItem("fromLocalStorage",JSON.stringify(lists))
+  })
+
   
   // list 삭제하기
   const deleteList = (id) => {
@@ -41,6 +31,12 @@ const List = ({currentUser}) => {
     //console.log(filteredList)
   }
 
+  let data;
+  const localStorageData = localStorage.getItem("fromLocalStorage");
+  if (localStorageData){
+    data = JSON.parse(localStorageData)
+  }
+  console.log(data)
 
   return (
     <section>
