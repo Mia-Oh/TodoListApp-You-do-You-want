@@ -12,7 +12,8 @@ const NewListForm = ({ onButtonClick }) => {
     let newList = {
       uuid: Math.floor(Math.random() * 10000),
       date: new Date().toISOString().substring(0, 10),
-      content: NewListContent
+      content: NewListContent,
+      checked: false
     };
     onButtonClick(newList);
     formReset();

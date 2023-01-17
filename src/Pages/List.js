@@ -7,8 +7,10 @@ import NewListForm from "../Components/NewListForm";
 const List = ({currentUser}) => {
 
 
+  // 기본 상태 로컬스토리지에서 불러오기
+  // 리스트 내용이 없을 경우 오류 생김 --> []도 넣어줘야 함 
   const [lists, setLists] = useState(
-    JSON.parse(window.localStorage.getItem("fromLocalStorage"))
+    JSON.parse(window.localStorage.getItem("fromLocalStorage")) || []
   );
 
   
@@ -17,8 +19,8 @@ const List = ({currentUser}) => {
     setLists([...lists, newList]);    
   }
 
+  // 렌더링 될 때 마다 로컬스토리지에 리스트 업데이트 해주기
   useEffect(() => {
-    //console.log(lists)
     window.localStorage.setItem("fromLocalStorage",JSON.stringify(lists))
   })
 
@@ -27,16 +29,21 @@ const List = ({currentUser}) => {
   const deleteList = (id) => {
     const filteredList = lists.filter((el) => el.uuid !== Number(id));
     setLists(filteredList);
-    //console.log(id)
-    //console.log(filteredList)
   }
 
-  let data;
-  const localStorageData = localStorage.getItem("fromLocalStorage");
-  if (localStorageData){
-    data = JSON.parse(localStorageData)
+ 
+  // To Do 체크 상태 변경
+  const toggleHandler = (id) => {
+    console.log(id)
+    let checkedList = lists.map((el) => {
+      if(el.uuid === id){
+        el.checked = !el.checked;
+      }
+      return el;
+    });
+      setLists(checkedList);
   }
-  console.log(data)
+
 
   return (
     <section>
@@ -49,7 +56,9 @@ const List = ({currentUser}) => {
           key={el.uuid} 
           id={el.uuid} 
           date={el.date}
+          checked={el.checked}
           deleteList={deleteList}
+          toggleHandler={toggleHandler}
           >
             {el.content}
           </SingleList>

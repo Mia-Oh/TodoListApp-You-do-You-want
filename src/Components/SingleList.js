@@ -1,21 +1,14 @@
 import React,{ useState } from "react";
 
-const SingleList = ( { id, date, children, deleteList } ) => {
+const SingleList = ( { id, date, children, deleteList, toggleHandler, checked } ) => {
 
-
-  const [isCheck, setIsCheck] = useState(false);
-
-  const toggleHandler = () => {
-    setIsCheck(!isCheck)
-    //console.log(isCheck)
-  }
 
   return (
     <li className="list">
       <div 
-        className={`toggle-container ${isCheck ? "toggle-checked" : ""}`}
-        value={id}
-        onClick={toggleHandler} 
+        className={`toggle-container ${ checked ? "toggle-checked" : ""}`}
+        id={id}
+        onClick={() => toggleHandler(id)} 
        ></div>
       <div className="date">{date}</div>
       <div className="list-contents">{children}</div>
