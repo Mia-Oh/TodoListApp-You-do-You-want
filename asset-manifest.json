@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/TodoListApp-You-do-You-want/static/css/main.cfd46846.css",
-    "main.js": "/TodoListApp-You-do-You-want/static/js/main.50da90ad.js",
+    "main.css": "/TodoListApp-You-do-You-want/static/css/main.692432bb.css",
+    "main.js": "/TodoListApp-You-do-You-want/static/js/main.534c54f7.js",
     "static/media/green-love.png": "/TodoListApp-You-do-You-want/static/media/green-love.f56730c8196a9e7a8c3b.png",
     "static/media/checked.png": "/TodoListApp-You-do-You-want/static/media/checked.af2a744f043c0183e3bc.png",
     "static/media/home.png": "/TodoListApp-You-do-You-want/static/media/home.fd4beaaf254fea154d91.png",
     "index.html": "/TodoListApp-You-do-You-want/index.html",
-    "main.cfd46846.css.map": "/TodoListApp-You-do-You-want/static/css/main.cfd46846.css.map",
-    "main.50da90ad.js.map": "/TodoListApp-You-do-You-want/static/js/main.50da90ad.js.map"
+    "main.692432bb.css.map": "/TodoListApp-You-do-You-want/static/css/main.692432bb.css.map",
+    "main.534c54f7.js.map": "/TodoListApp-You-do-You-want/static/js/main.534c54f7.js.map"
   },
   "entrypoints": [
-    "static/css/main.cfd46846.css",
-    "static/js/main.50da90ad.js"
+    "static/css/main.692432bb.css",
+    "static/js/main.534c54f7.js"
   ]
 }
