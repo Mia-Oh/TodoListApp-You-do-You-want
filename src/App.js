@@ -14,6 +14,10 @@ const App = (props) => {
   // 유저 닉네임 상태
   const [currentUser, setCurrentUser] = useState('원필이');
 
+  // 유저 닉네임 상태 바꿀 함수
+  const userNameHandler = (newConent) => {
+    setCurrentUser(newConent);
+  }
 
   // 슬라이드 메뉴를 위한 상태 만들기
   const [showNav, setShowNav] = useState(false);
@@ -68,8 +72,8 @@ const App = (props) => {
               <Route path="/TodoListApp-You-do-You-want/index.html" element={<List currentUser={currentUser}/>}/>
               <Route path="/TodoListApp-You-do-You-want/about" element={<About />} />
               <Route path="/TodoListApp-You-do-You-want/setting" element={<Setting 
-                currentUser={currentUser} 
-                setCurrentUser={setCurrentUser}/>} />
+                userNameHandler={userNameHandler}
+                currentUser={currentUser}/>} />
               <Route path="/TodoListApp-You-do-You-want/Lyrics" element={<Lyrics />} />
               <Route path="/TodoListApp-You-do-You-want/Feedback" element={<Feedback />} />
             </Routes>
