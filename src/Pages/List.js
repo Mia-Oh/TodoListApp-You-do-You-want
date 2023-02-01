@@ -1,4 +1,4 @@
-import React,{ useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import RandomLyrics from "../Components/RandomLyrics";
 import SingleList from "../Components/SingleList";
 import NewListForm from "../Components/NewListForm";

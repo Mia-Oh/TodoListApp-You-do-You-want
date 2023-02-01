@@ -1,5 +1,3 @@
-import React,{ useState } from "react";
-
 const SingleList = ( { id, date, children, deleteList, toggleHandler, checked } ) => {
 
 

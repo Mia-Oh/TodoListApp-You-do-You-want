@@ -1,4 +1,3 @@
-import React from "react";
 import { lyricsData } from "../data/lyricsData";
 
 function RandomLyrics(){

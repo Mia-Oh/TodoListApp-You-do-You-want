@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import Footer from "../Components/Footer";
 
 const Setting = ({ userNameHandler,currentUser }) => {
