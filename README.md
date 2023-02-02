@@ -12,6 +12,15 @@
 <img src="https://user-images.githubusercontent.com/115627384/216266973-d27b4b2c-a2c1-4357-bdea-8baf82d10418.jpg" width="400" />
 
 
+## Languages and Tools
+
+
+<img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=JavaScript&logoColor=white">
+<img src="https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=React&logoColor=white">
+<img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=HTML5&logoColor=white">
+<img src="https://img.shields.io/badge/CSS-FC7E0F?style=for-the-badge&logo=CSS3&logoColor=white">
+<img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=GitHub&logoColor=white">
+
 ## 주요 기능
 
 #### 1. 해야할 일 등록과 완료한 일로 체크 및 삭제 기능
