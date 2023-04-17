@@ -1,7 +1,8 @@
 # 🍀 You do! You want! 
 노래 가사와 함께 정리하는 To Do List App 
 
-🔗 https://mia-oh.github.io/TodoListApp-You-do-You-want/index.html
+**<a href="https://mia-oh.github.io/TodoListApp-You-do-You-want/index.html" target="_blank">🌐 배포링크 : You do! You want! </a>** </br>
+ 
 
 ## About
 
